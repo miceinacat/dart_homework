@@ -1,0 +1,30 @@
+//Issue 1
+
+void main() {
+ for (int i = 1; i <= 100; i++) {
+  if (i % 3 == 0 && i % 5 == 0) {
+    print("Super Quiz");
+  } else if (i % 3 == 0) {
+    print("Super");
+  } else if (i % 5 == 0) {
+    print("Quiz");
+  } else {
+    print(i);
+  }
+ }
+}
+
+
+//Issue 2
+
+var number = 1234575;
+var count = 0;
+void main() {
+ do {
+  number ~/= 10;
+  count++;   
+ } while (number > 0);
+print(count);
+}
+
+//Issue 3
