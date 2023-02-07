@@ -1,0 +1,19 @@
+void main() {
+  List<String> words = ["dart", "abcd", "good luck"]; //Список со значениями
+  List<int> results = []; //Создаем список                       
+  int counter = 1; //Задаем счетчик для дальнейшего умножения                         
+  for(String word in words) {//Перебираем слова из основного списка
+    results.add(getSplit(word) * counter);//Добавляем в новый список значения
+    counter++;//Увеличиваем счетчик
+  }
+  print(results);//Выводим результат
+}
+
+int getSplit(String word) {//Функция подсчета суммы количества букв в слове по алфавиту
+  String letters2 = 'abcdefghijklmnopqrstuvwxyz'; // Алфавит
+  int total1 = 0; //Задаем начало подсчета
+  for(var i=0; i<word.length;i++){//Проходимся циклом по буквам слова
+    total1 +=letters2.indexOf(word[i])+1;//увеличиваем подсчитанное число букв по их индексу в слове
+    }
+  return total1;
+}
